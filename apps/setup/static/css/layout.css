@@ -1,0 +1,62 @@
+#app-confirm{
+	@relative;
+	width:100%;
+	min-height:1300px;
+	$bg:#f3f3f3;
+	padding:50px 0;
+}
+
+#app-confirm .box{
+	$bg:#fff;
+	$corner:3px;
+	max-width:360px;
+	padding:30px 30px 30px 120px;
+	$mshadow:6px rgba(0,0,0,0.1);
+	margin:auto;
+	@relative;
+}
+
+#app-confirm .box .image{
+	@absolute;
+	top:30px;
+	left:30px;
+	width:64px;
+	height:64px;
+	$corner:32px;
+}
+
+#app-confirm .box h1{
+	@f18 @thick @#111;
+	padding-bottom:5px;
+}
+
+#app-confirm .box .text{
+	@f15 @normal @#888;
+	padding-bottom:20px;
+	line-height:20px;
+}
+
+#app-confirm .box .text b{
+	@thick @#333;
+}
+
+#app-confirm .box .buttons{
+	@xo;
+}
+
+#app-confirm .box .buttons .button{
+	width:48%;
+	padding:9px 0;
+	$corner:3px;
+	@f14;
+}
+
+#app-confirm .box .buttons .button.-cancel{
+	$bg:#ccc;
+	@#fff;
+}
+
+
+#app-confirm .box .buttons .button:hover{
+	$bg:@main;
+}

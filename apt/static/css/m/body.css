@@ -1,0 +1,12 @@
+
+#body{
+	padding-top:50px;
+}
+
+
+
+#body .section{
+	$bg:#fff;
+	$bottom:20px #e1e1e1;
+	$top:#ddd;
+}

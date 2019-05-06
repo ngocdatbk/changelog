@@ -1,0 +1,65 @@
+#guest-box{
+	$bg:#f3f3f3;
+	min-height:1000px;
+	padding:100px 0;
+}
+
+#guest-box .w{
+	max-width:600px;
+	$bg:#fff;
+	margin:auto;
+	padding:20px;
+}
+
+#guest-box h1{
+	@center @@success @f24 @thin;
+	padding-bottom:20px;
+}
+
+#guest-box .li{
+	@relative;
+	padding:13px 0 13px 45px;
+	$top:rgba(0,0,0,0.1);
+	@block;
+}
+
+#guest-box .li .icon{
+	@absolute;
+	left:0px;
+	top:10px;
+	width:32px;
+	height:320px;
+}
+
+#guest-box .li .icon img{
+	width:32px;
+}
+
+#guest-box .li .name{
+	@upper @f16;
+}
+
+#guest-box .li .link{
+	@#aaa @block @normal @f12;
+	padding-top:3px;
+}
+
+
+#guest-box .none{
+	@center  @@success @f14;
+	line-height:22px;
+	padding:0 20px;
+}
+
+#guest-box .logout{
+	@center;
+	padding-top:20px;
+}
+
+#guest-box .logout .action{
+	@@error @pointer;
+}
+
+#guest-box .logout .action:hover{
+	@underline;
+}

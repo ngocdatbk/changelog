@@ -1,0 +1,103 @@
+#m_2factor{
+	max-width:800px;
+	margin:auto;
+	padding:50px;
+}
+
+
+#m_2factor .box{
+	$bg:@success 0.1;
+	$stroke:2px $rgba(@success,0.5);
+}
+
+#m_2factor .box .header{
+	padding:15px 100px 15px 80px;
+	$bottom:$rgba(@success,0.4);
+	@relative;
+}
+
+#m_2factor .box .header:before{
+	$icon:e2ab;
+	@@success @absolute;
+	left:20px;
+	top:20px;
+	font-size:48px;
+}
+
+#m_2factor .box .header .status{
+	@absolute;
+	right:15px;
+	top:15px;
+}
+
+#m_2factor .box .header .status select{
+	@finput @xinput;
+}
+
+
+#m_2factor .box .header .status select{
+	$bg:@success;
+	@#fff @thick @f12;
+	padding:6px 10px;
+	$corner:3px;
+}
+
+#m_2factor .box .header h1{
+	@thick @f24 @<@success 30 30>;
+}
+
+#m_2factor .box .header .subtitle{
+	padding-top:5px;
+	@f13 @normal;
+	@<@success 80 30>;
+	line-height:18px;
+}
+
+
+#m_2factor .box .code-verify{
+	padding:20px;
+	@relative;
+}
+
+#m_2factor .box .code-verify .input{
+	margin-right:250px;
+}
+
+#m_2factor .box .code-verify .input input{
+	@finput @xinput;
+}
+
+#m_2factor .box .code-verify .input input{
+	$stroke:rgba(0,0,0,0.1);
+	@f20 @@main;
+	$bg:#fff;
+	padding:9px 15px;
+	$corner:3px;
+}
+
+#m_2factor .box .code-verify .save{
+	@absolute;
+	right:20px;
+	top:20px;
+	padding:13px 20px;
+	@center @#fff @thick @f14 @pointer;
+	$corner:3px;
+	$bg:@main;
+}
+
+#m_2factor .box .code-verify .save:hover{
+	$bg:@success;
+}
+
+
+
+#m_2factor .body{
+	@center;
+	$bg:#fff;
+	padding:50px;
+}
+
+#m_2factor .body .help{
+	@#aaa @f12 @thin;
+	padding-bottom:15px;
+}

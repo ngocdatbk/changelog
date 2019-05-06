@@ -1,0 +1,58 @@
+body.xo{
+	@absolute @xo;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:100vh;
+}
+
+
+
+.__customdialog{
+	bottom:0px;
+}
+
+.__fdialog .__dialogwrapper{
+	width:100%;
+	margin:0%;
+}
+
+.__fdialog .__dialogmain{
+	float:none;
+	max-width:none;
+	min-width:auto;
+	width:100%;
+	margin:auto;
+	$corner:0px;
+}
+
+.__fdialog .__dialogclose{
+	right:auto;
+	left:0px;
+	top:0px;
+	@f24 @#fff;
+	padding:10px 15px;
+}
+
+.__fdialog .__dialogclose span{
+	@f24;
+}
+
+.__fdialog .__dialogtitlewrap{
+	$bg:<@main 10 10>;
+	height:50px;
+	@borderbox @#fff;
+	padding-left:55px;
+	$corner:0px;
+	padding-top:14px;
+}
+
+.__fdialog .__dialogtitlewrap .__dialogtitle{
+	@f18 @normal;
+	text-transform:none;
+}
+
+
+.apppages.-center{
+	margin:10px 0;
+}

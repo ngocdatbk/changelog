@@ -1,0 +1,66 @@
+.orgchart .org{
+	$dgradient:#fafafa #eee;
+	padding:10px 10px 10px 64px;
+	$corner:3px;
+	height:80px;
+	@relative @xo @borderbox;
+	$stroke:rgba(0,0,0,0.1);
+}
+
+.orgchart .org:hover{
+	$gradient:#fff #fff;
+	$mshadow:3px rgba(0,0,0,0.05);
+}
+
+.orgchart .org .avatar{
+	@absolute;
+	width:40px;
+	height:40px;
+	$corner:4px;
+	left:10px;
+	top:10px;
+}
+
+.orgchart .org .avatar img{
+	width:40px;
+	height:40px;
+}
+
+.orgchart .org .name{
+	@thin @f16;
+}
+
+.orgchart .org .info{
+	@#888 @f12;
+	padding-top:3px;
+}
+
+.orgchart .add{
+	@absolute @f16 @pointer @#999;
+	right:1px;
+	bottom:1px;
+	$top:#eee;
+	$left:#eee;
+	padding:3px;
+	width:16px;
+	height:18px;
+	$corner:6px 0 0 0;
+	@hidden;
+}
+
+.orgchart .node:hover .add{
+	@block;
+}
+
+.orgchart .add div{
+	$transition:all 0.5s;
+}
+
+.orgchart .add:hover{
+	$bg:#fff;
+}
+
+.orgchart .add:hover div{
+	$rotate:180 1;
+	@@main;
+}

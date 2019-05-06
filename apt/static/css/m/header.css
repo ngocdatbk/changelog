@@ -1,0 +1,129 @@
+#header{
+	$bg:@main;
+	height:50px;
+	top:0px;
+	left:0px;
+	right:0px;
+	color:rgba(255,255,255,0.5);
+	position:fixed;
+	z-index:5001;
+}
+
+#header .mi{
+	@f20 @absolute @#fff @borderbox;
+	height:50px;
+	top:1px;
+	left:0px;
+	padding:11px 15px;
+}
+
+#header .icons{
+	@absolute @f20;
+	top:0px;
+	right:5px;
+}
+
+#header .icons .icon{
+	padding:13px 10px;
+	@block @pointer @left;
+	color:rgba(255,255,255,0.8);
+}
+
+#header .icons .icon:active, #header .icons .icon:focus{
+	@#fff;
+}
+
+#header .title{
+	padding-left:50px;
+	@f18 @#fff @thick @borderbox;
+	padding-top:15px;
+	height:50px;
+}
+
+
+
+
+
+#subheader{
+	$bg:@main;
+	z-index:999;
+	$bottom:<@main 20 20>;
+	@relative;
+	z-index:999;
+	$color:#fff 0.6;
+}
+
+#subheader .items{
+	display:table;
+	table-layout: fixed;
+	width:100%;
+}
+
+#subheader .items > div{
+	display: table-cell;
+	@center @f13 @relative;
+	padding:10px 0;
+}
+
+#subheader .items > div:hover, #subheader .items > div:active{
+	@#fff;
+}
+
+#subheader .items > div .icon{
+	@f18 @inline;
+	vertical-align:-2px;
+	margin-right:5px;
+}
+
+#subheader .items > div.active{
+	@#fff @bold;
+}
+
+
+
+
+
+
+
+#subheader .filter{
+	$bg:@main;
+	color:rgba(255,255,255,0.8);
+	padding:10px 15px;
+	@relative;
+}
+
+#subheader .filter .label{
+	@f12 @upper;
+	padding-bottom:2px;
+}
+
+#subheader .filter .select{
+	@absolute @borderbox @f15 @#fff;
+	right:0px;
+	top:0px;
+	width:50%;
+	text-align:right;
+	padding:9px 15px;
+}
+
+
+
+#subheader.auto-slide{
+	overflow-x:scroll;
+	overflow-y:hidden;
+	height:37px;
+}
+
+#subheader.auto-slide .items{
+	display:block;
+	width:auto;
+	overflow:hidden;
+	table-layout:auto;
+	width:400px;
+}
+
+#subheader.auto-slide .items > div{
+	display:block;
+	float:left;
+	padding:8px 15px 15px 15px;
+}

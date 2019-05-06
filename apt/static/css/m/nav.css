@@ -1,0 +1,26 @@
+#nav{
+	@xo @borderbox;
+	height:40px;
+	$bg:#f3f3f3;
+	padding:13px 15px;
+	overflow-x:scroll;
+	@#888;
+	$bottom:rgba(0,0,0,0.1);
+}
+
+#nav .nav{
+	white-space: nowrap;
+}
+
+#nav .sep{
+	@inline @f12 @#ccc;
+	margin:0 10px;
+}
+
+#nav .sep:before{
+	$icon:f05a;
+}
+
+#nav .item{
+	@inline @f12 @upper;
+}

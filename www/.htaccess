@@ -1,0 +1,15 @@
+Options +FollowSymLinks 
+Options -MultiViews
+
+RewriteEngine on
+
+RewriteCond %{ENV:REDIRECT_STATUS} !^$
+RewriteRule .* - [L]
+
+RewriteRule ^css/(.*) css.php?__ap=$1 [QSA,NC,L]
+RewriteRule ^js/(.*) js.php?__ap=$1 [QSA,NC,L]
+RewriteRule ^appimg/(.*) appimg.php?__ap=$1 [QSA,NC,L]
+
+RewriteRule ^ajax/(.*) ajax.php?__ap=$1&__h=%{HTTP_HOST} [QSA,NC,L]
+RewriteRule ^([A-Za-z0-9-\._~\@]*)$ index.php?__ap=$1&__h=%{HTTP_HOST} [QSA,NC,L]
+RewriteRule ^([A-Za-z0-9-\._~\@]+)/(.*)$ index.php?__ap=$1/$2&__h=%{HTTP_HOST} [QSA,NC,L]

@@ -1,0 +1,736 @@
+<?php require_once(ROOT_DIR."/apt/static/css/css.conf"); ?>
+
+
+
+.document-0 .tx-fill{
+	$bg:@tx;
+}
+
+.document-0 .tx-header-fill{
+	$bg:#6D67A6;
+}
+
+.document-0 .tx-header-fill-x2{
+	$bg:<#6D67A6 10 10>;
+}
+
+.document-0 .tx-fill-x2{
+	$bg:<@tx 5 10>;
+}
+
+.document-0 .tx-fill-x3{
+	$bg:<@tx 10 30>;
+}
+
+.document-0 .tx-text-fill{
+	@@tx; 
+}
+ 
+.document-0 a, .document-0 .a{
+	@@tx;
+}
+
+.document-0 .tx-title, .document-0 .tx-title-active.active, .document-0 .tx-text-hover:hover{
+	@@tx;
+}
+
+.document-0 .tx-title.imp, .document-0 .tx-title-active.active.imp, .document-0 .tx-text-hover.imp:hover{
+	color:@tx !important;
+}
+
+.document-0 .tx-border{
+	border-color:@tx;
+}
+
+.document-0 .tx-box{
+	$bg:@tx;
+	@#fff;
+}
+
+.document-0 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@tx -10 -10>;
+	@@tx;
+}
+
+.document-0 .tx-box-edge:hover{
+	$bg:@tx;
+	@#fff;
+}
+
+.document-0 .form .input input:focus, .document-0 .form .input textarea:focus, .document-0 .form .select select:focus, .document-0 input.std:focus, .document-0 textarea.std:focus, .document-0 select.std:focus{
+	$glow:8px $rgba(@tx,0.3);
+	border-color:$rgba(@tx,0.7); 
+}
+
+
+
+
+
+
+.document-1 .tx-fill, .document-1 .tx-canvas.active .tx-fill-active, .document-1 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt7;
+}
+
+.document-1 .tx-border, .document-1 .tx-canvas.active .tx-border-active, .document-1 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt7;
+}
+
+.document-1 .tx-header-fill{
+	$bg:#2578B8;
+}
+
+.document-1 .tx-header-fill-x2{
+	$bg:<@tx 10 10>;
+}
+
+.document-1 .tx-fill-x2{
+	$bg:<@tx 5 10>;
+}
+
+.document-1 .tx-fill-x3{
+	$bg:<@tx 10 30>;
+}
+
+.document-1 .tx-text-fill{
+	@@tx;
+}
+
+.document-1 a, .document-1 .a{
+	@@tx;
+}
+
+.document-1 .tx-title, .document-1 .tx-title-active.active, .document-1 .tx-text-hover:hover{
+	@@tx;
+}
+
+.document-1 .tx-title.imp, .document-1 .tx-title-active.active.imp, .document-1 .tx-text-hover.imp:hover{
+	color:@tx !important;
+}
+
+.document-1 .tx-box{
+	$bg:@alt7;
+	@#fff;
+}
+
+.document-1 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt7 -10 -10>;
+	@@alt7;
+}
+
+.document-1 .tx-box-edge:hover{
+	$bg:@alt7;
+	@#fff;
+	$stroke:<@alt7 5 5>;
+}
+
+.document-1 .form .input input:focus, .document-1 .form .input textarea:focus, .document-1 .form .select select.std:focus, .document-1 input.std:focus, .document-1 textarea.std:focus, .document1 select.std:focus{
+	$glow:8px $rgba(@alt7,0.3);
+	border-color:$rgba(@alt7,0.7); 
+}
+
+
+
+
+.document-2 .tx-fill, .document-2 .tx-canvas.active .tx-fill-active, .document-2 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt2;
+}
+
+.document-2 .tx-border, .document-2 .tx-canvas.active .tx-border-active, .document-2 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt2;
+}
+
+.document-2 .tx-header-fill{
+	$bg:#BA8C72;
+}
+
+.document-2 .tx-header-fill-x2{
+	$bg:<@alt2 30 30>; 
+}
+
+.document-2 .tx-fill-x2{
+	$bg:<@alt2 5 10>;
+}
+
+.document-2 .tx-fill-x3{
+	$bg:<@alt2 10 30>;
+}
+
+.document-2 .tx-text-fill{
+	@@alt2;
+}
+
+.document-2 a, .document-2 .a{
+	@@alt2;
+}
+
+.document-2 .tx-title, .document-2 .tx-title-active.active, .document-2 .tx-text-hover:hover{
+	@@alt2;
+}
+
+.document-2 .tx-title.imp, .document-2 .tx-title-active.active.imp, .document-2 .tx-text-hover.imp:hover{
+	color:@alt2 !important;
+}
+
+
+.document-2 .tx-box{
+	$bg:@alt2;
+	@#fff;
+}
+
+.document-2 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt2 -10 -10>;
+	@@alt2;
+}
+
+.document-2 .tx-box-edge:hover{
+	$bg:@alt2;
+	@#fff;
+	$stroke:<@alt2 5 5>;
+}
+
+.document-2 .form .input input:focus, .document-2 .form .input textarea:focus, .document-2 .form .select select.std:focus, .document-2 input.std:focus, .document-2 textarea.std:focus, .document-2 select.std:focus{
+	$glow:8px $rgba(@alt2,0.3);
+	border-color:$rgba(@alt2,0.7); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.document-3 .tx-fill, .document-3 .tx-canvas.active .tx-fill-active, .document-3 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt3;
+}
+
+.document-3 .tx-border, .document-3 .tx-canvas.active .tx-border-active, .document-3 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt3;
+}
+
+
+.document-3 .tx-header-fill{
+	$bg:#6AA9B0;
+}
+
+.document-3 .tx-header-fill-x2{
+	$bg:<@alt3 10 10>;
+}
+
+.document-3 .tx-fill-x2{
+	$bg:<@alt3 5 10>;
+}
+
+.document-3 .tx-fill-x3{
+	$bg:<@alt3 10 30>;
+}
+
+.document-3 .tx-text-fill{
+	@@alt3;
+}
+
+.document-3 a, .document-3 .a{
+	@@alt3;
+}
+
+.document-3 .tx-title, .document-3 .tx-title-active.active, .document-3 .tx-text-hover:hover{
+	@@alt3;
+}
+
+.document-3 .tx-title.imp, .document-3 .tx-title-active.active.imp, .document-3 .tx-text-hover.imp:hover{
+	color:@alt3 !important;
+}
+
+
+.document-3 .tx-box{
+	$bg:@alt3;
+	@#fff;
+}
+
+.document-3 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt3 -10 -10>;
+	@@alt3;
+}
+
+.document-3 .tx-box-edge:hover{
+	$bg:@alt3;
+	@#fff;
+	$stroke:<@alt3 5 5>;
+}
+
+.document-3 .form .input input:focus, .document-3 .form .input textarea:focus, .document-3 .form .select select.std:focus, .document-3 input.std:focus, .document-3 textarea.std:focus, .document-3 select.std:focus{
+	$glow:8px $rgba(@alt3,0.3);
+	border-color:$rgba(@alt3,0.7); 
+}
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+.document-4 .tx-fill, .document-4 .tx-canvas.active .tx-fill-active, .document-4 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt4;
+}
+
+.document-4 .tx-border, .document-4 .tx-canvas.active .tx-border-active, .document-4 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt4;
+}
+
+.document-4 .tx-fill.imp{
+	background-color:@alt4 !important;
+}
+
+.document-4 .tx-header-fill{
+	$bg:#694E68;
+}
+
+.document-4 .tx-header-fill-x2{
+	$bg:<#735471 10 10>;
+}
+
+.document-4 .tx-fill-x2{
+	$bg:<@alt4 5 10>;
+}
+
+.document-4 .tx-fill-x3{
+	$bg:<@alt4 10 30>;
+}
+
+.document-4 .tx-text-fill{
+	@@alt4;
+}
+
+.document-4 a, .document-4 .a{
+	@@alt4;
+}
+
+.document-4 .tx-title, .document-4 .tx-title-active.active, .document-4 .tx-text-hover:hover{
+	@@alt4;
+}
+
+.document-4 .tx-title.imp, .document-4 .tx-title-active.active.imp, .document-4 .tx-text-hover.imp:hover{
+	color:@alt4 !important;
+}
+
+.document-4 .tx-box{
+	$bg:@alt4;
+	@#fff;
+}
+
+.document-4 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt4 -10 -10>;
+	@@alt4;
+}
+
+.document-4 .tx-box-edge:hover{
+	$bg:@alt4;
+	@#fff;
+	$stroke:<@alt4 5 5>;
+}
+
+.document-4 .form .input input:focus, .document-4 .form .input textarea:focus, .document-4 .form .select select.std:focus, .document-4 input.std:focus, .document-4 textarea.std:focus, .document-4 select.std:focus{
+	$glow:8px $rgba(@alt4,0.3);
+	border-color:$rgba(@alt4,0.7); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.document-5 .tx-fill, .document-5 .tx-canvas.active .tx-fill-active, .document-5 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt5;
+}
+
+.document-5 .tx-border, .document-5 .tx-canvas.active .tx-border-active, .document-5 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt5;
+}
+
+.document-5 .tx-fill.imp{
+	background-color:@alt5 !important;
+}
+
+.document-5 .tx-header-fill{
+	$bg:#A34545;
+}
+
+.document-5 .tx-header-fill-x2{
+	$bg:<@alt5 10 10>;
+}
+
+.document-5 .tx-fill-x2{
+	$bg:<@alt5 5 10>;
+}
+
+.document-5 .tx-fill-x3{
+	$bg:<@alt5 10 30>;
+}
+
+.document-5 .tx-text-fill{
+	@@alt5;
+}
+
+.document-5 a, .document-5 .a{
+	@@alt5;
+}
+
+.document-5 .tx-title, .document-5 .tx-title-active.active, .document-5 .tx-text-hover:hover{
+	@@alt5;
+}
+
+.document-5 .tx-title.imp, .document-5 .tx-title-active.active.imp, .document-5 .tx-text-hover.imp:hover{
+	color:@alt5 !important;
+}
+
+.document-5 .tx-box{
+	$bg:@alt5;
+	@#fff;
+}
+
+
+
+.document-5 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt5 -10 -10>;
+	@@alt5;
+}
+
+.document-5 .tx-box-edge:hover{
+	$bg:@alt5;
+	@#fff;
+	$stroke:<@alt5 5 5>;
+}
+
+.document-5 .form .input input:focus, .document-5 .form .input textarea:focus, .document-5 .form .select select.std:focus, .document-5 input.std:focus, .document-5 textarea.std:focus, .document-5 select.std:focus{
+	$glow:8px $rgba(@alt5,0.3);
+	border-color:$rgba(@alt5,0.7); 
+}
+
+
+
+
+
+
+
+
+
+
+.document-6 .tx-fill, .document-6 .tx-canvas.active .tx-fill-active, .document-6 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt6;
+}
+
+.document-6 .tx-border, .document-6 .tx-canvas.active .tx-border-active, .document-6 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt6;
+}
+
+.document-6 .tx-header-fill{
+	$bg:<@alt6 60 80>;
+}
+
+.document-6 .tx-header-fill-x2{
+	$bg:<@alt6 15 15>;
+}
+
+.document-6 .tx-fill-x2{
+	$bg:<@alt6 5 10>;
+}
+
+.document-6 .tx-fill-x3{
+	$bg:<@alt6 10 30>;
+}
+
+.document-6 .tx-text-fill{
+	@@alt6;
+}
+
+.document-6 a, .document-6 .a{
+	@@alt6;
+}
+
+.document-6 .tx-title, .document-6 .tx-title-active.active, .document-6 .tx-text-hover:hover{
+	@@alt6;
+}
+
+.document-6 .tx-title.imp, .document-6 .tx-title-active.active.imp, .document-6 .tx-text-hover.imp:hover{
+	color:@alt6 !important;
+}
+
+.document-6 .tx-box{
+	$bg:@alt3;
+	@#fff;
+} 
+
+.document-6 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt3 -10 -10>;
+	@@alt3;
+}
+
+.document-6 .tx-box-edge:hover{
+	$bg:@alt3;
+	@#fff;
+	$stroke:<@alt3 5 5>;
+}
+
+.document-6 .form .input input:focus, .document-6 .form .input textarea:focus, .document-6 .form .select select:focus, .document-6 input.std:focus, .document-6 textarea.std:focus, .document-6 select.std:focus{
+	$glow:8px $rgba(@alt3,0.3);
+	border-color:$rgba(@alt3,0.7); 
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+.document-7 .tx-fill, .document-7 .tx-canvas.active .tx-fill-active, .document-7 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt7;
+}
+
+.document-7 .tx-border, .document-7 .tx-canvas.active .tx-border-active, .document-7 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt7;
+}
+
+.document-7 .tx-header-fill{
+	$bg:#42BD7F;
+}
+
+.document-7 .tx-header-fill-x2{
+	$bg:<@alt7 20 20>;
+}
+
+.document-7 .tx-fill-x2{
+	$bg:<@alt7 5 10>;
+}
+
+.document-7 .tx-fill-x3{
+	$bg:<@alt7 10 30>;
+}
+
+.document-7 .tx-text-fill{
+	@@alt7;
+}
+
+.document-7 a, .document-7 .a{
+	@@alt7;
+}
+
+.document-7 .tx-title, .document-7 .tx-title-active.active, .document-7 .tx-text-hover:hover{
+	@@alt7;
+}
+
+.document-7 .tx-title.imp, .document-7 .tx-title-active.active.imp, .document-7 .tx-text-hover.imp:hover{
+	color:@alt7 !important;
+}
+
+
+.document-7 .tx-box{
+	$bg:@alt7;
+	@#fff;
+} 
+
+.document-7 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt7 -10 -10>;
+	@@alt7;
+}
+
+.document-7 .tx-box-edge:hover{
+	$bg:@alt7;
+	@#fff;
+	$stroke:<@alt7 5 5>;
+}
+
+.document-7 .form .input input:focus, .document-7 .form .input textarea:focus, .document-7 .form .select select.std:focus, .document-7 input.std:focus, .document-7 textarea:focus, .document-7 select.std:focus{
+	$glow:8px $rgba(@alt7,0.3);
+	border-color:$rgba(@alt7,0.7); 
+}
+
+
+
+
+
+
+
+
+.document-8 .tx-fill, .document-8 .tx-canvas.active .tx-fill-active, .document-8 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt8;
+}
+
+.document-8 .tx-border, .document-8 .tx-canvas.active .tx-border-active, .document-8 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt8;
+}
+
+.document-8 .tx-header-fill{
+	$bg:@alt8;
+}
+
+.document-8 .tx-header-fill-x2{
+	$bg:<@alt8 10 10>;  
+}
+
+.document-8 .tx-fill-x2{
+	$bg:<@alt8 5 10>;
+}
+
+.document-8 .tx-fill-x3{
+	$bg:<@alt8 10 30>;
+}
+
+.document-8 .tx-text-fill{
+	@@alt8;
+}
+
+.document-8 a, .document-8 .a{
+	@@alt8;
+}
+
+.document-8 .tx-title, .document-8 .tx-title-active.active, .document-8 .tx-text-hover:hover{
+	@@alt8;
+}
+
+.document-8 .tx-title.imp, .document-8 .tx-title-active.active.imp, .document-8 .tx-text-hover.imp:hover{
+	color:@alt8 !important;
+}
+
+
+.document-8 .tx-box{
+	$bg:@alt8;
+	@#fff;
+} 
+
+.document-8 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt8 -10 -10>;
+	@@alt8;
+}
+
+.document-8 .tx-box-edge:hover{
+	$bg:@alt8;
+	$stroke:<@alt8 5 5>;
+	@#fff;
+}
+
+.document-8 .form .input input:focus, .document-8 .form .input textarea:focus, .document-8 .form .select select:focus, .document-8 input.std:focus, .document-8 textarea.std:focus, .document-8 select.std:focus{
+	$glow:8px $rgba(@alt8,0.3);
+	border-color:$rgba(@alt8,0.7); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.document-9 .tx-fill, .document-9 .tx-canvas.active .tx-fill-active, .document-9 .tx-canvas:hover .tx-fill-hover{
+	$bg:@alt9;
+}
+
+.document-9 .tx-border, .document-9 .tx-canvas.active .tx-border-active, .document-9 .tx-canvas:hover .tx-border-hover{
+	border-color:@alt9;
+}
+
+.document-9 .tx-header-fill{
+	$bg:#7B992C;
+}
+
+.document-9 .tx-header-fill-x2{
+	$bg:<@alt9 20 20>;
+}
+
+.document-9 .tx-fill-x2{
+	$bg:<@alt9 5 10>;
+}
+
+.document-9 .tx-fill-x3{
+	$bg:<@alt9 10 30>;
+}
+
+.document-9 .tx-text-fill{
+	@@alt9;
+}
+
+.document-9 a, .document-9 .a{
+	@@alt9;
+}
+
+.document-9 .tx-title, .document-9 .tx-title-active.active, .document-9 .tx-text-hover:hover{
+	@@alt9;
+}
+
+.document-9 .tx-title.imp, .document-9 .tx-title-active.active.imp, .document-9 .tx-text-hover.imp:hover{
+	color:@alt9 !important;
+}
+ 
+.document-9 .tx-box{
+	$bg:@alt9;
+	@#fff;
+} 
+ 
+.document-9 .tx-box-edge{
+	$bg:#fff;
+	$stroke:<@alt9 -10 -10>;
+	@@alt9;
+}
+
+.document-9 .tx-box-edge:hover{
+	$bg:@alt9;
+	@#fff;
+	$stroke:<@alt9 5 5>;
+}
+
+.document-9 .form .input input:focus, .document-9 .form .input textarea:focus, .document-9 .form .select select:focus, .document-9 input.std:focus, .document-9 textarea.std:focus, .document-9 select.std:focus{
+	$glow:8px $rgba(@alt9,0.3);
+	border-color:$rgba(@alt9,0.7); 
+}

@@ -1,0 +1,48 @@
+$sprite a11: a.png 0 0 50;
+$sprite a12: a.png 50 0 50;
+$sprite a13: a.png 100 0 50;
+$sprite a14: a.png 150 0 50;
+$sprite a15: a.png 200 0 50;
+$sprite a16: a.png 250 0 50;
+
+$sprite a21: a.png 0 50 50;
+$sprite a22: a.png 50 50 50;
+$sprite a23: a.png 100 50 50;
+$sprite a24: a.png 150 50 50;
+$sprite a25: a.png 200 50 50;
+$sprite a26: a.png 250 50 50;
+
+$sprite a31: a.png 0 100 50;
+$sprite a32: a.png 50 100 50;
+$sprite a33: a.png 100 100 50;
+$sprite a34: a.png 150 100 50;
+$sprite a35: a.png 200 100 50;
+$sprite a36: a.png 250 100 50;
+
+
+$sprite b11: a.png 0 150 100;
+$sprite b12: a.png 100 150 100;
+$sprite b13: a.png 200 150 100;
+$sprite b14: a.png 300 150 100;
+$sprite b15: a.png 400 150 100;
+$sprite b16: a.png 500 150 100;
+
+$sprite b21: a.png 0 250 100;
+$sprite b22: a.png 100 250 100;
+$sprite b23: a.png 200 250 100;
+$sprite b24: a.png 300 250 100;
+$sprite b25: a.png 400 250 100;
+$sprite b26: a.png 500 250 100;
+
+$sprite b31: a.png 0 350 100;
+$sprite b32: a.png 100 350 100;
+$sprite b33: a.png 200 350 100;
+$sprite b34: a.png 300 350 100;
+$sprite b35: a.png 400 350 100;
+$sprite b36: a.png 500 350 100;
+
+
+.s50{
+	width:49px;
+	height:49px;
+}

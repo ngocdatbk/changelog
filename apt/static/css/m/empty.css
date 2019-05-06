@@ -1,0 +1,19 @@
+.empty.add-cta{
+	padding:40px 20px;
+	@f14 @thin @center @#aaa;
+	$bg:@yellow 0.1;
+}
+
+.empty.add-cta .cta{
+	padding-top:20px;
+}
+
+.empty.add-cta .cta .-ap{
+	font-size:32px;
+	@@green;
+}
+
+.empty.add-cta .cta div{
+	@f13 @bold @@green @upper;
+	padding-top:15px;
+}

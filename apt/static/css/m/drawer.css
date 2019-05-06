@@ -1,0 +1,149 @@
+#drawer{
+	position:fixed;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	z-index:8888;
+	@hidden;
+}
+
+#drawer .mask{
+	$bg:#000 0.5;
+	@absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+}
+
+#drawer .drawer{
+	$bg:#fff;
+	width:80%;
+	height:100%;
+	top:0px;
+	left:-100%;
+	@absolute;
+	z-index:1000;
+	overflow-y:scroll;
+	$mshadow:10px rgba(0,0,0,0.5);
+}
+
+#drawer .header{
+	padding:20px 20px;
+	@relative;
+	$bottom:6px rgba(255,255,255,0.1);
+}
+
+#drawer .header .user{
+	@relative @#999;
+}
+
+#drawer .header .image{
+	@absolute;
+	top:0px;
+	left:0px;
+	width:40px;
+	height:40px;
+	$corner:50%;
+	@xo;
+}
+
+#drawer .header .image img{
+	width:40px;
+	height:40px;
+}
+
+#drawer .header .main{
+	padding-left:60px;
+} 
+
+#drawer .header .main .name{
+	@f15 @bold @#111;
+	padding-bottom:3px;
+	padding-top:2px;
+}
+
+
+
+#drawer .cover{
+	$dgradient:@main @success;
+	height:130px;
+	$bottom:50px #fff;
+	@relative;
+}
+
+#drawer .cover .user{
+	@absolute;
+	bottom:-30px;
+	height:60px;
+	padding-left:95px;
+	right:10px;
+	left:0px;
+}
+
+#drawer .cover .user .image{
+	@absolute;
+	left:15px;
+	bottom:0px;
+	width:60px;
+	height:60px;
+	$corner:36px;
+	$stroke:3px #fff;
+	@xo;
+}
+
+#drawer .cover .user .image img{
+	width:60px;
+	height:60px;
+	@block;
+	$corner:50%;
+}
+
+#drawer .cover .user .name{
+	@f18 @#fff;
+	padding-bottom:9px;
+	padding-top:4px;
+}
+
+#drawer .cover .user .info{
+	@f13 @#aaa;
+}
+
+#drawer .cover .user .info.main{
+	@f14 @#555;
+	padding-bottom:3px;
+}
+
+
+
+#drawer .drawer > .cta{
+	$bg:@success;
+	$corner:3px;
+	padding:11px 0;
+	@bold @center @#fff @upper @f13;
+	margin:0px 20px 15px 20px;
+}
+
+#drawer .drawer .section{
+	padding:15px 0;
+	$top:6px #eee;
+}
+
+#drawer .drawer .section > .li-title{
+	color:#888;
+	@upper @f14 @thin;
+	padding:10px 0 10px 20px;
+}
+
+#drawer .drawer .li{
+	padding:13px 20px 13px 50px;
+	color:#888;
+	@relative @f14;
+}
+
+#drawer .drawer .li .icon{
+	@absolute @f16;
+	left:20px;
+	top:12px;
+}

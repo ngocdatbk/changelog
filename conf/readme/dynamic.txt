@@ -1,0 +1,18 @@
+HOW TO CONFIG SERVERS TO STORE DYNAMIC DOMAINS?
+
+1. In VHOST config, use the following configuration
+
+	<VirtualHost *:80>
+		ServerAdmin <RANDOM>
+		DocumentRoot "<PATH TO CODE>"
+		ServerName other.<BASE URL>
+		ServerAlias *.* 
+	</VirtualHost>
+	
+	The server alias and server name are very important. Because server alias accepts every *.*, it's 
+	a good practice to place this configuration at the end of the VHOST file (to avoid conflict). 
+
+
+2. In sys.ini, change "ALLOW_DYNAMIC_URL = 0" to "ALLOW_DYNAMIC_URL = 1".
+
+3. Be careful with the login script.

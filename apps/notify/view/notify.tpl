@@ -1,0 +1,3 @@
+<script>
+	Notify.listen();
+</script>

@@ -1,0 +1,26 @@
+#auth{
+	padding-top:20px;
+}
+
+#auth .box-wrap{
+	width:90%; 
+	margin:auto;
+}
+
+#auth .box-wrap .auth-logo img{
+	max-width:150px;
+}
+
+#auth .box .form{
+	padding:20px;
+}
+
+#auth .box .form .row .checkbox{
+	position:static;
+	margin-bottom:20px;
+}
+
+#auth .box .form .row .submit{
+	float:none;
+	@center;
+}

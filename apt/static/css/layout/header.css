@@ -1,0 +1,288 @@
+.apppages{
+	@relative @f15 @#999;
+}
+
+.apppages.-right{
+	text-align:right;
+}
+
+.apppages.-center{
+	text-align:center;
+}
+
+.apppages .icons {
+	@normal @f16 @inline @xo;
+	
+	$corner:4px;
+	vertical-align:-10px;
+	margin-left:15px;
+}
+
+.apppages .icons > *{
+	@left @pointer @xo;
+	padding:8px 10px;
+	$stroke:transparent;
+}
+
+.apppages .icons > div:hover{
+}
+
+.apppages .icons > div.next:hover, .apppages .icons > div.prev:hover{
+	@@main;
+	$stroke:#ddd;
+	$corner:22px;
+	$bg:#fff;
+}
+
+.apppages .icons > div.next.disabled, .apppages .icons > div.prev.disabled{
+	$opacity:0.7;
+	@#aaa;
+	$bg:#fff;
+	$corner:22px;
+}
+
+
+
+
+.apppages .icons div.label{
+	@f14 @#888;
+	padding:7px 20px;
+}
+
+
+
+
+
+.apptitle{
+	@relative;
+	margin:0 20px;
+	z-index:888;
+	height:74px;
+	$bg:#fff;
+	z-index:1000;
+	$bottom:2px #eee;
+}
+
+.apptitle > .icons{
+	@f20 @absolute;
+	right:300px;
+	top:10px;
+}
+
+.apptitle > .icons .icon{
+	@right @pointer @#aaa;
+	padding:10px 10px;
+}
+
+.apptitle > .icons .icon:hover{
+	@#111;
+}
+
+.apptitle > .search{
+	@absolute;
+	width:180px;
+	$corner:4px;
+	padding:9px 13px 9px 36px;
+	left:0px;
+	top:18px;
+	$bg:#f4f4f4;
+}
+
+.apptitle > .search:after{
+	@absolute;
+	$icon:e2ca;
+	left:10px;
+	top:8px;
+	@f20 @#bbb;
+}
+
+.apptitle > .search input{
+	@xinput;
+	width:100%;
+	@f14;
+}
+
+
+.apptitle .actions{
+	@absolute;
+	right:0px;
+	top:18px;
+}
+
+.apptitle .actions .action{
+	@left @pointer;
+	margin-left:13px;
+	$corner:4px;
+}
+
+.apptitle .actions .action.-icon{
+	@f24 @#aaa;
+	padding:6px 10px;
+	$transition:all 0.5s;
+}
+
+.apptitle .actions .action.-icon:hover{
+	$bg:@cta 0.8;
+	@#fff;
+}
+
+.apptitle .actions .action.-cta{
+	$stroke:@cta;
+	padding:9px 15px;
+	@f15 @@cta;
+}
+
+.apptitle .cta{
+	@absolute @f15 @pointer @normal @#fff;
+	$corner:4px;
+	padding:9px 15px;
+	$bg:@cta;
+	top:18px;
+	right:0px;
+}
+
+.apptitle .cta .dd{
+	@absolute @#888 @f13 @hidden;
+	left:0px;
+	top:36px;
+	width:250px;
+	$bg:#fff;
+	padding:8px;
+	$corner:3px;
+	$mshadow:6px rgba(0,0,0,0.1);
+}
+
+.apptitle .cta:hover .dd{
+	@block;
+}
+
+.apptitle .cta .dd .sep{
+	height:2px;
+	$bg:#eee;
+	margin:10px;
+}
+
+.apptitle .cta .dd .item{
+	padding:8px 10px;
+	margin-bottom:2px;
+	@relative @xo @block @#888 @normal;
+}
+
+.apptitle .cta .dd .item:hover{
+	$bg:#f3f3f3;
+	@@main;
+}
+
+.apptitle .menu{
+	padding-top:16px;
+	padding-left:15px;
+	@center;
+}
+
+.apptitle .menu .dropdown{
+	@relative @f15 @#aaa @pointer @left;
+	padding:7px 15px 7px 0;
+}
+
+.apptitle .menu .dropdown b{
+	@#333;
+}
+
+
+
+.apptitle .menu .tab{
+	@inline @f13 @pointer @normal @#999 @relative @upper;
+	margin:0px 10px;
+	padding:15px 0px;
+}
+
+.apptitle .menu .tab .-cmenu{
+	text-transform:none;
+	top:36px;
+}
+
+.apptitle .menu .tab > .-ap{
+	vertical-align:-1px;
+}
+
+.apptitle .menu .tab:hover{
+	@#111;
+}
+
+.apptitle .menu .tab.active{
+	@#111 @bold;
+}
+
+.apptitle .menu .tab.active .r{
+	$arrow:top 9px rgba(0,0,0,0.1);
+	@absolute;
+	top:50px;
+	left:50%;
+	margin-left:-7px;
+}
+
+.apptitle .menu .tab.active .r:before{
+	content:"";
+	$arrow:top 9px #fff;
+	@absolute;
+	top:1px;
+	left:-1px;
+	margin-left:-8px;
+}
+
+
+.apptitle .menu .tab .-icon{
+	@absolute @center;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	width:40px;
+}
+
+.apptitle .menu .tab .-icon > .-ap{
+	@block @center @f16;
+	padding-top:9px;
+}
+
+
+
+.apptitle .menu .tab.with-icon{
+	padding-left:36px;
+	margin-top:0px;
+	@block;
+}
+
+
+
+.apptitle .menu .tab.active .r.white:before{
+	$arrow:top 9px #fff;
+}
+
+.apptitle .menu .tab.active .r.dark:before{
+	$arrow:top 9px @pagebg;
+}
+
+
+
+.apptitle .back{
+	padding-top:18px;
+	padding-left:40px;
+	@pointer @block @nobreak @inline;
+	max-width:50%;
+}
+
+.apptitle .back:before{
+	$icon:e094;
+	@absolute @f24 @#aaa;
+	left:0px;
+	top:20px;
+}
+
+.apptitle .back .label{
+	@upper @#ccc @f11 @normal;
+	padding-bottom:3px;
+}
+
+.apptitle .back .title{
+	@f18 @thin @#222;
+}

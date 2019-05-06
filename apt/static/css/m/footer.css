@@ -1,0 +1,70 @@
+#footer{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	$bg:#f4f4f4;
+	z-index:999;
+}
+
+#footer .items{
+	display:table;
+	table-layout: fixed;
+	width:100%;
+}
+
+#footer .items > div{
+	display: table-cell;
+	@center @#aaa @f12;
+	padding:5px 0;
+}
+
+#footer .items > div .icon{
+	@f18;
+	margin-bottom:3px;
+}
+
+#footer .items > div.active{
+	@@main;
+}
+
+
+#footer .items > div:active, #footer .items > div:hover{
+	$bg:#eee;
+}
+
+
+
+
+
+#footer .buttons{
+	display:table;
+	table-layout: fixed;
+	width:100%;
+}
+
+#footer .buttons > div{
+	display: table-cell;
+	@center @#aaa @f11 @upper;
+	padding:5px 0;
+}
+
+#footer .buttons > div .icon{
+	@f18;
+	margin-bottom:3px;
+}
+
+#footer .buttons > div.success{
+	$bg:@success;
+	@#fff;
+}
+
+#footer .buttons > div.main{
+	$bg:@main;
+	@#fff;
+}
+
+#footer .buttons > div.error{
+	$bg:@error;
+	@#fff;
+}

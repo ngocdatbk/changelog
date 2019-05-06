@@ -1,0 +1,239 @@
+@define green #2bd14e;
+
+html, body{
+	$dgradient:#512DA8 <@main 20 20>;
+	overflow:auto;
+}
+
+#master{
+	margin:0;
+	left:0px;
+	$shadow:0px transparent;
+}
+
+#auth{
+	padding-top: 50px;
+	padding-bottom:50px;
+}
+
+
+#auth .box-wrap{
+	width:500px; 
+	margin:auto;
+}
+
+#auth .box-wrap .auth-logo{
+	@center;
+	padding-bottom:40px;
+}
+
+#auth .box-wrap .auth-title{
+	@center @f36;
+}
+
+#auth .box-wrap .auth-title .sub{
+	@#999 @f32;
+}
+
+#auth .box-wrap h1{
+	@thick @f24;
+	padding:35px 30px 8px 30px;
+}
+
+#auth .box-wrap .auth-sub-title{
+	@#888 @f14;
+	padding:0px 30px 30px 30px;
+	$bottom:#eee; 
+} 
+
+
+#auth .box{
+	$bg:#fff;
+	$shadow:10px rgba(0,0,0,0.1); 
+	$corner:4px;
+}
+
+
+#auth .box .form{
+	padding:30px;
+}
+
+#auth .box .form .row{
+	padding-bottom:20px;
+}
+
+#auth .box .form .row .info{
+	@f13;
+}
+
+
+#auth .box .form .row .label{
+	padding-bottom:10px;
+	@bold @f13;
+}
+
+#auth .box .form .row .label .sub{
+	@#888;
+}
+
+#auth .box .form .row .input{
+	$bg:#fff;
+	$corner:3px;
+	padding:0;
+}
+
+#auth .box .form .row .input.half{
+	width:48%;
+}
+
+#auth .box .form .row .input.disabled{
+	$bg:#f3f3f3;
+	@#666;
+}
+
+
+#auth .box .form .row .input input{
+	@f16;
+}
+
+#auth .box .form .row .input input{
+	padding:10px;
+}
+
+
+
+#auth .box .form .row .input-adv{
+	$bg:#fff;
+	$stroke:#ddd #ccc;
+	$corner:3px;
+	padding:10px;
+	@f16;
+}
+
+#auth .box .form .row .input-adv input{
+	@xinput @f16;
+	width:80%;
+	padding-left:6px;
+}
+
+
+
+#auth .box .form .row .submit{
+	$bg:@green;
+	@f14 @bold @#fff @pointer @center;
+	padding:11px 25px; 
+	$corner:3px;
+	margin-top:40px;
+}
+
+#auth .box .form .row .submit:hover{
+	$opacity:0.8;
+}
+
+
+#auth .box .form .row .checkbox{
+	@absolute @f13 @#888;
+	left:0px;
+	top:0px;
+}
+
+#auth .box .form .row .checkbox input{
+	vertical-align:-2px;
+}
+
+
+#auth .box .extra{
+	$top:#eee;
+	$bg:#f6f6f6;
+	padding:30px;
+	$corner:0 0 4px 4px;
+}
+
+
+#auth .box .extra .simple{
+	@center @f15 @#888;
+}
+
+#auth .box .extra .simple a{
+	@bold @#111;
+}
+
+#auth .box .extra .simple a.a{
+	@normal @@main;
+}
+
+
+#auth .box .extra .haft{
+	width:45%;
+}
+
+#auth .box .extra .haft h3{
+	@f13 @#999 @bold;
+	$tshadow:1px #fff;
+	padding-bottom:20px;
+}
+
+
+#auth .box .extra .haft .button{
+	$gradient:#fff #f3f3f3;
+	$stroke:#ddd;
+	$corner:3px;
+	padding:10px 15px;
+	@bold @f13 @pointer @#777 @block;
+}
+
+
+#auth .box .extra .haft .button .icon{
+	@right @f16;
+	margin-top:-2px;
+	$opacity:0.8;
+}
+
+
+#auth .box .extra .haft .button:hover{
+	$gradient:#fff #fff;
+	$stroke:#aaa;
+	@#111;
+}
+
+
+#auth .box .extra .haft .more{
+	padding-top:15px;
+	@f12 @normal @#aaa;
+	line-height:20px;
+}
+
+
+
+#auth .box .continue{
+	padding:50px;
+	@center;
+}
+
+
+#auth .box .continue .promote{
+	@f23 @@green;
+	padding-bottom:10px;
+}
+
+#auth .box .continue .sub{
+	@#888 @f15;
+	padding-bottom:20px;
+}
+
+#auth .box .continue .sub-promote{
+	@bold @f15 @#111;
+}
+
+
+#auth .box .form .row .oauth-login{
+	$bg:<#d62d20 -10 -10>;
+	@f14 @bold @#fff @pointer @center @block;
+	padding:11px 25px; 
+	$corner:3px;
+	margin-top:20px;
+}
+
+#auth .box .form .row .oauth-login:hover{
+	$bg:#d62d20;
+}

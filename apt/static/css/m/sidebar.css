@@ -1,0 +1,68 @@
+#sidebar{
+	position:fixed;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	z-index:8888;
+	@hidden;
+}
+
+#sidebar .mask{
+	$bg:#000 0.5;
+	@absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+}
+
+#sidebar .sidebar{
+	$bg:#fff;
+	width:60%;
+	height:100%;
+	top:0px;
+	right:-100%;
+	@absolute;
+	z-index:1000;
+	overflow-y:scroll;
+	$mshadow:10px rgba(0,0,0,0.5);
+}
+
+
+#sidebar .section{
+	padding:15px 20px;
+}
+
+#sidebar .section .title{
+	@thick @f16 @@success;
+	padding:10px 0;
+}
+
+#sidebar .list .li{
+	padding:11px 0 11px 35px;
+	@relative @f14;
+}
+
+
+#sidebar .list .li .cb{
+	@absolute;
+	width:18px;
+	height:18px;
+	$stroke:#ccc;
+	$corner:2px;
+	top:8px;
+	left:0px;
+}
+
+#sidebar .list .li.checked .cb{
+	$bg:@success;
+	$stroke:<@success 10 10>;
+}
+
+#sidebar .list .li.checked .cb:after{
+	$icon:e116;
+	@f12 @absolute @#fff;
+	top:3px;
+	left:3px;
+}

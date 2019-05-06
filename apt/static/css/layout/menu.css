@@ -1,0 +1,139 @@
+#menuw{
+	z-index:1999;
+}
+
+#menu{
+	@absolute;
+	width:270px;
+	bottom:0px;
+	right:0px;
+	top:0px;
+	@#999;
+	$left:rgba(0,0,0,0.1);
+	$bg:#f6f6f6;
+}
+
+
+#menu .canvas{
+	@absolute @xo;
+	right:0px;
+	left:0px;
+	top:56px;
+	bottom:0px;
+}
+
+#menu .canvas > .main{
+	@absolute;
+	right:-20px;
+	left:0px;
+	top:0px;
+	bottom:00px;
+	overflow-y:scroll;
+}
+
+#menu .top{
+	padding:13px 15px;
+	$bottom:#eee;
+	height:74px;
+	@borderbox;
+}
+
+#menu .top .name{
+	@f22 @thin @#111;
+}
+
+#menu .top .info{
+	@normal @f14;
+	padding-top:4px;
+}
+
+
+#menu .title{
+	@thin @f14 @upper @#999;
+	padding:20px 20px 15px 20px;
+	$top:#eee;
+	
+}
+
+#menu .box{
+	padding-bottom:20px;
+}
+
+#menu .li{
+	@relative @f14 @pointer @block @normal @#555;
+	padding:10px 10px 10px 48px;
+	$corner:3px;
+}
+
+#menu .li small{
+	@f10 @inline @normal @#ccc @absolute @center;
+	$bg:#fff 0.1;
+	padding:1px 3px;
+	$corner:2px;
+	right:12px;
+	top:11px;
+	min-width:20px;
+}
+
+#menu .li > .text{
+	margin-right:40px;
+}
+
+#menu .li .icon{
+	@absolute @#aaa;
+	top:8px;
+	left:20px;
+	@xo @f16 @normal;
+}
+
+
+
+#menu .li .count{
+	$bg:@red 0.8;
+	@f11 @block @absolute;
+	padding:2px 4px;
+	right:15px;
+	top:10px;
+	$corner:3px;
+	color:#fff;
+	font-weight:300;
+}
+
+#menu .li .unread{
+	@hidden;
+}
+
+#menu .li.-unread .unread{
+	@block;
+}
+
+
+#menu .li .info{
+	@f11 @block;
+	padding-top:3px;
+}
+
+#menu .li .info span{
+	@f12;
+}
+
+
+#menu .li:hover{
+	$bg:#fff 0.5;
+}
+
+
+#menu .li.active{
+	@@main @bold;
+}
+
+#menu .li.active .icon{
+	@@main;
+}
+
+#menu .__apscrollbar .scroller .sinner{
+	
+	$corner:6px;
+	width:6px;
+	margin-left:2px;
+}

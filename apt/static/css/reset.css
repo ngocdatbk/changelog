@@ -1,0 +1,116 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:inherit;
+	font-size:inherit;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 0.0px;
+	text-rendering: geometricPrecision;
+}
+body, html{ 
+	padding: 0;
+	margin: 0;
+	@xfont;
+	font-size:12px;
+} 
+body { 
+	word-wrap: break-word;
+}
+ 
+ 
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0; 
+	border: 0; 
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+a, .a{
+	text-decoration:none;
+	@a;
+	font-weight:bold;
+	cursor:pointer;
+}
+a:hover{
+	@ahover;
+}
+:focus {
+	outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}  
+ins
+{
+	text-decoration: none;
+}
+del,.del
+{
+	text-decoration: line-through;
+	color:#f30
+}
+ol, ul {
+	list-style: none;
+}
+img {
+	border: none;
+	overflow:hidden;
+	font-size:10px;
+	color: transparent;
+  	vertical-align: middle;
+	/*For IE.  http://css-tricks.com/ie-fix-bicubic-scaling-for-images*/
+  	-ms-interpolation-mode: bicubic;
+}
+h5 {
+	font-size:12px;
+}
+h1 {
+	font-size:18px;
+}
+h2 {
+	font-size:16px;
+}
+h3, label {
+	font-size:14px;
+}
+h4 {
+	font-size:13px;
+}
+h6 {
+	font-size:11px;
+}
+/*table*/
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+table, th, td {
+	vertical-align:middle;
+}
+textarea{
+	resize: none;
+}
+
+
+.emo{
+	vertical-align:middle;
+	@inline;
+	margin-top:-2px;
+}
+
+.url{
+	@pointer;
+}
+
+.url.std:hover{
+	@underline;
+}

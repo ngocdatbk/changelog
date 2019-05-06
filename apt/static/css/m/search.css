@@ -1,0 +1,44 @@
+#search{
+	$bg:@main;
+	height:60px;
+	top:0px;
+	left:0px;
+	right:0px;
+	color:rgba(255,255,255,0.5);
+	position:fixed;
+	z-index:5001;
+}
+
+#search .mi{
+	@f24 @absolute @borderbox @#fff;
+	height:50px;
+	top:5px;
+	left:10px;
+	padding:11px 15px;
+	z-index:1000;
+}
+
+#search .input{
+	@absolute;
+	top:10px;
+	right:10px;
+	bottom:10px;
+	left:10px;
+	$bg:#fff 0.1;
+	$mshadow:2px rgba(0,0,0,0.1);
+	$corner:4px;
+}
+
+#search .input input{
+	@finput @xinput;
+}
+
+#search .input input{
+	@f15 @#fff;
+	padding:11px;
+	padding-left:58px;
+}
+
+#search .input input$placeholder{
+	color:rgba(255,255,255,0.4);
+}

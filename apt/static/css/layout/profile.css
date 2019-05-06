@@ -1,0 +1,215 @@
+.account-edit{
+	@absolute @f20 @#ccc;
+	right:10px;
+	top:85px;
+	padding:10px;
+	@pointer;
+}
+
+#profile{
+	max-width:600px;
+	margin:auto;
+	padding:20px 20px;
+}
+
+#profile .main{
+	@relative;
+	padding-left:120px;
+	padding-bottom:30px;
+}
+
+#profile .main .image{
+	@block @absolute;
+	top:10px;
+	left:0px;
+	width:100px;
+	height:100px;
+	@xo;
+	$corner:50px;
+}
+
+#profile .main .image img{
+	width:100px;
+	height:100px;
+}
+
+
+#profile .main .text{
+	
+}
+
+#profile .main .title{
+	@f26 @normal @#111;
+}
+
+#profile .main .subtitle{
+	@f16 @thin @#aaa;
+	padding-top:8px;
+	margin-bottom:6px;
+}
+
+#profile .main .info{
+	padding-top:8px;
+	@f14 @relative;
+	padding-left:110px;
+}
+
+#profile .main .info b{
+	@inline @#666 @thick @absolute;
+	width:110px;
+	left:0px;
+}
+
+#profile .main .info a{
+	@normal;
+}
+
+#profile .main .info a:hover{
+	@underline;
+}
+
+#profile .main .info p{
+	@f14;
+	padding-bottom:4px;
+}
+
+
+#profile .list{
+	padding-top:40px;
+	padding-bottom:20px;
+}
+
+
+#profile .list .title{
+	@thick @f13 @#aaa @relative @upper;
+	padding:15px 0;
+	$bottom:#ddd;
+}
+
+#profile .list .title .add{
+	@absolute @f20 @pointer @#ccc @center;
+	right:0px;
+	top:6px;
+	padding:6px;
+}
+
+#profile .list .title .add:hover{
+	@@main;
+}
+
+
+#profile .list .item-none{
+	@f14 @thin @center @#888;
+	$bg:#f8f8f8;
+	padding:20px;
+	margin-top:25px;
+}
+
+#profile .list .item{
+	border-bottom:1px dotted #ddd;
+	@relative;
+	padding:15px 0;
+	$transition:all 0.3s;
+}
+
+#profile .list .item.url{
+	@@main @pointer;
+}
+
+#profile .list .item .icon{
+	@absolute @f24 @#aaa  @pointer;
+	right:0px;
+	top:20px;
+	$transition:all 0.3s;
+}
+
+
+#profile .list .item .actions{
+	@absolute @hidden;
+	right:0px;
+	top:10px;
+}
+
+#profile .list .item:hover .actions{
+	@block;
+}
+
+
+#profile .list .item .actions .-icon{
+	@f20 @#aaa;
+	padding:6px;
+}
+
+#profile .list .item .name{
+	@f18 @thick;
+	padding-bottom:8px;
+}
+
+#profile .list .item .subname{
+	@f16 @thin;
+	padding-bottom:8px;
+}
+
+#profile .list .item .time{
+	@thick @f14;
+	padding-bottom:8px;
+}
+
+#profile .list .item .info{
+	@normal @f14 @#999;
+}
+
+#profile .list .item.url:hover .name{
+	@thick @underline;
+}
+
+#profile .list .item.url:hover .icon{
+	@@main;
+}
+
+
+
+#profile .list .contact-info{
+	@relative @f14;
+	padding:13px 0 13px 0;
+	padding-left:160px;
+	border-bottom:1px dotted #ddd;
+}
+
+#profile .list .contact-info b{
+	@absolute @thick @#888 @f13;
+	top:13px;
+	left:0px;
+}
+
+#profile .list .contact-info a{
+	@normal;
+}
+
+#profile .list .contact-info a:hover{
+	@underline;
+}
+
+
+
+
+
+#delegation-alert{
+	margin:0 20px;
+	$bg:@success 0.1;
+	padding:20px;
+	$color:<@success 20 20>;
+	$bottom:rgba(0,0,0,0.05);
+	@f13 @normal @relative;
+}
+
+#delegation-alert .cta{
+	$bg:#fff;
+	$stroke:2px @success;
+	@@success;
+	@absolute @normal @pointer;
+	right:30px;
+	top:10px;
+	padding:8px 20px;
+	$corner:3px;
+}

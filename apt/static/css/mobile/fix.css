@@ -1,0 +1,70 @@
+.scrollin{
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.mobile_hidden{
+	display:none !important;
+}
+
+
+.__fdialog .__dialogmain{
+	width:100%;
+	min-width:100%;
+	max-width:100%;
+}
+
+.__fdialog .__dialogwrapper{
+	width:100%;
+}
+
+#menu{
+	@hidden;
+}
+
+#menu.active{
+	left:auto;
+	right:0px;
+	z-index:10001;
+	@block;
+}
+
+#hmenu .menu{
+	width:auto;
+	right:68px;
+}
+
+#page{
+	margin-left:0px;
+}
+
+#sideapp{
+	@hidden;
+}
+
+#mainapp{
+	margin-right:0px;
+	margin-left:0px;
+}
+
+
+
+.title.app-title .actions{
+	position:static;
+	margin-top:20px;
+	@xo;
+}
+
+.title.app-title .actions .wsep-10{
+	@hidden;
+}
+
+.title.app-title .actions .search{
+	float:none;
+}
+
+.title.app-title .button-group{
+	left:auto;
+	right:20px;
+	margin:0;
+}

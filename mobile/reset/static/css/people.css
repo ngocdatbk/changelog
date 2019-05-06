@@ -1,0 +1,452 @@
+.objlist{
+	padding:0 20px 20px 20px;
+	min-height:800px;
+}
+
+.objlist .list-info{
+	@f13 @#666;
+	padding-top:15px;
+}
+
+.objlist .list-info > .li{
+	padding-bottom:8px;
+}
+
+.objlist .list-info > .li .-ap{
+	@f16 @inline @#999;
+}
+
+.objlist > .li{
+	$bottom:#eee;
+	margin-top:20px;
+	cursor:default;
+	padding-bottom:32px;
+}
+
+.objlist > .li{
+	@relative @pointer;
+	padding:0px 0px 25px 72px;
+}
+
+.objlist .li .icon{
+	@absolute;
+	top:0px;
+	width:45px;
+	min-height:40px;
+}
+
+.objlist .li.-icon-left .icon{
+	left:0px;
+}
+
+.objlist .li.-icon-right .icon{
+	right:0px;
+}
+
+.objlist .li .icon .count{
+	width:48px;
+	height:48px;
+	@nobreak @center @f18 @thick @borderbox @#999;
+	$bg:#eee;
+	padding-top:11px;
+	$corner:4px;
+	margin-top:2px;
+}
+
+
+.list.objlist .li .icon .circle{
+	width:40px;
+	height:40px;
+	@block @#fff @f16 @center;
+	$corner:20px;
+	$opacity:0.8;
+}
+
+.list.objlist .li .icon .circle span{
+	@block;
+	padding-top:12px;
+}
+
+
+.objlist .li .icon .stat{
+	@block @center @f12;
+	$mshadow:1px rgba(0,0,0,0.1);
+	@#888;
+	padding:4px 0;
+	$bg:#fff 0.6;
+	$corner:3px;
+	margin-top:-2px;
+}
+
+.objlist .li .icon .stat b{
+	@block @f15 @#111;
+	padding-bottom:2px;
+}
+
+
+
+.objlist .li .icon .cal{
+	@block @center @f12 @upper @xo;
+	@#888;
+	$bg:#fff;
+	$corner:3px;
+	margin-top:-2px;
+	padding-bottom:4px;
+	$mshadow:1px rgba(0,0,0,0.1);
+}
+
+.objlist .li .icon .cal b{
+	@block @f13 @@red;
+	padding:3px 0;
+	padding-top:4px;
+}
+
+
+
+
+.objlist .li .icon > img{
+	width:32px;
+}
+
+.objlist .li .icon > .avatar .image{
+	width:48px;
+	height:48px;
+	$corner:24px;
+	@xo @block;
+}
+
+.objlist .li .icon > .avatar .image img{
+	width:48px;
+	height:48px;
+}
+
+.objlist .li > .action{
+	@absolute @#888;
+	right:0px;
+	top:-5px;
+	padding:5px;
+}
+
+.objlist .li > .action:hover{
+	@@main;
+}
+
+.objlist .li > .action:before{
+	@f16 @normal;
+	content:" ";
+}
+
+.objlist .li > .action.-more:before{
+	$icon:e6cb;
+}
+
+.objlist .li > .action.-next:before{
+	$icon:e6ba;
+}
+
+
+.objlist .li .text{
+	@f16 @normal @#111;
+	min-height:40px;
+}
+
+.objlist .li .text em{
+}
+
+.objlist .li .text .sub{
+	@block @f13 @#333 @normal;
+	padding-top:7px;
+}
+
+.objlist .li .text .sub .tag{
+	@inline @upper @f11;
+	padding:3px 5px;
+	margin-right:10px;
+	margin-top:-2px;
+}
+
+.objlist .li .text .sub .a{
+	@normal;
+}
+
+.objlist .li:hover .text, .objlist .li:hover .text em{
+	@@main @bold;
+} 
+
+
+.objlist .li .leader{
+	@absolute @hidden;
+	right:100px; 
+	top:0px; 
+	width:300px;
+	padding-left:55px;
+	@borderbox;
+}
+
+.objlist .li .leader .avatar{
+	@absolute;
+	top:0px;
+	left:0px;
+}
+
+.objlist .li .leader .label{
+	@upper @f11 @#aaa;
+}
+
+.objlist .li .leader .name{
+	@f16 @thin @#111;
+	padding:4px 0 4px 0;
+}
+
+.objlist .li .leader .info{
+	@f13 @#888 @thin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.objtab{
+	min-height:800px;
+	@relative @xo;
+}
+
+.objtab table{
+	width:100%;
+}
+
+.objtab th{
+	padding:13px 15px;
+	$bottom:rgba(0,0,0,0.1);
+	@thick @f12 @@success @upper;
+	text-align:left;
+}
+
+.objtab td{
+	padding:13px 15px;
+	$top:#eee;
+	vertical-align:top;
+	@relative;
+}
+
+.objtab .list-info{
+	@f13 @#666;
+	@absolute;
+	width:100%;
+}
+
+.objtab .list-info > .li{
+	padding-bottom:8px;
+}
+
+.objtab .list-info > .li .-ap{
+	@f16 @inline @#999;
+}
+
+.objtab .li .user{
+	@relative;
+	padding-left:65px;
+}
+
+.objtab .li .icon{
+	@absolute;
+	top:0px;
+	left:0px;
+	width:45px;
+	min-height:40px;
+}
+
+.objtab .li .icon .count{
+	width:48px;
+	height:48px;
+	@nobreak @center @f18 @thick @borderbox @#999;
+	$bg:#eee;
+	padding-top:11px;
+	$corner:4px;
+	margin-top:2px;
+}
+
+
+.list.objtab .li .icon .circle{
+	width:40px;
+	height:40px;
+	@block @#fff @f16 @center;
+	$corner:20px;
+	$opacity:0.8;
+}
+
+.list.objtab .li .icon .circle span{
+	@block;
+	padding-top:12px;
+}
+
+
+.objtab .li .icon .stat{
+	@block @center @f12;
+	$mshadow:1px rgba(0,0,0,0.1);
+	@#888;
+	padding:4px 0;
+	$bg:#fff 0.6;
+	$corner:3px;
+	margin-top:-2px;
+}
+
+.objtab .li .icon .stat b{
+	@block @f15 @#111;
+	padding-bottom:2px;
+}
+
+
+
+.objtab .li .icon .cal{
+	@block @center @f12 @upper @xo;
+	@#888;
+	$bg:#fff;
+	$corner:3px;
+	margin-top:-2px;
+	padding-bottom:4px;
+	$mshadow:1px rgba(0,0,0,0.1);
+}
+
+.objtab .li .icon .cal b{
+	@block @f13 @@red;
+	padding:3px 0;
+	padding-top:4px;
+}
+
+
+
+
+.objtab .li .icon > img{
+	width:32px;
+}
+
+.objtab .li .icon > .avatar .image{
+	width:48px;
+	height:48px;
+	$corner:24px;
+	@xo @block;
+}
+
+.objtab .li .icon > .avatar .image img{
+	width:48px;
+	height:48px;
+}
+
+.objtab .li .action{
+	@relative @#888;
+	padding:5px;
+}
+
+.objtab .li .action:hover{
+	@@main;
+}
+
+.objtab .li .action:before{
+	@f16 @normal;
+	content:" ";
+}
+
+.objtab .li .action.-more:before{
+	$icon:e6cb;
+}
+
+.objtab .li .action.-next:before{
+	$icon:e6ba;
+}
+
+
+.objtab .li .text{
+	@f16 @normal @#111;
+	min-height:40px;
+}
+
+.objtab .li .text em{
+}
+
+.objtab .li .text .sub{
+	@block @f13 @#333 @normal;
+	padding-top:7px;
+}
+
+.objtab .li .text .sub .tag{
+	@inline @upper @f11;
+	padding:3px 5px;
+	margin-right:10px;
+	margin-top:-2px;
+}
+
+.objtab .li .text .sub .a{
+	@normal;
+}
+
+.objtab .li:hover{
+	$bg:#f3f3f3;
+} 
+
+
+.objtab .li .leader{
+	@absolute;
+	right:100px; 
+	top:0px; 
+	width:300px;
+	padding-left:55px;
+	@borderbox;
+}
+
+.objtab .li .leader .avatar{
+	@absolute;
+	top:0px;
+	left:0px;
+}
+
+.objtab .li .leader .label{
+	@upper @f11 @#aaa;
+}
+
+.objtab .li .leader .name{
+	@f16 @thin @#111;
+	padding:4px 0 4px 0;
+}
+
+.objtab .li .leader .info{
+	@f13 @#888 @thin;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#quota-alert{
+}
+
+#quota-alert .box{
+	padding:15px 20px;
+	$bottom:rgba(0,0,0,0.1);
+	@f12 @#888;
+	$bg:@error 0.1;
+	line-height:20px;
+}
+
+#quota-alert .box b{
+	@@success;
+}
+
+#quota-alert .box a:hover{
+	@underline;	
+}
