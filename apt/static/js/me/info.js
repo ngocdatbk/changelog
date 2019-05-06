@@ -2,7 +2,6 @@ Me.info=new function __WUserInfo(){
 	this.edit=function(){
 		AP.ajaxShow();
 		AP.post("api/me/info", {}, function(code){
-			console.log(code);
 			AP.ajaxHide();
 			if (!code.good()){
 				return;
