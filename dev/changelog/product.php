@@ -2,8 +2,8 @@
 	
 	namespace changelog;
 	
-	class Product extends \Asset{
-		public static $db="Product";
+	class Product extends \DB{
+		public static $db="product";
 		public static $schema="
 			id int,
 			name varchar(200),
@@ -12,10 +12,10 @@
 			user_id int,
 			username varchar(32),
 			
-			system_id int:0,
+			system_id int,
 			
 			since int:now,
-			last_update int
+			last_update int:now
 		";
 
         public function user(&$user){
@@ -27,6 +27,17 @@
         public function system(&$sys){
             $this->system_id=$sys->id;
             $this->system=$sys;
+        }
+
+        public function addWriter(&$user){
+            $writer=new Writer();
+            $writer->user_id = $user->id;
+            $writer->product_id = $this->id;
+
+            if (!$writer->save()){
+                return false;
+            }
+            return true;
         }
 	}
 
