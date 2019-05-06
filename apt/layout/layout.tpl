@@ -6,7 +6,6 @@
 	{% view [GTEMPLATE]/base.tpl}
 	  
 	{% view layout/base.tpl}
-	{% view layout/bcanvas.tpl}	
 	
 	<div id='document'>
 		<div id='master'>	
