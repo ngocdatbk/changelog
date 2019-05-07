@@ -26,7 +26,7 @@
         Ajax::release(Code::DB_ERROR);
     }
 
-    // Set people to the business units
+    // Set writer
     $writers=(Word::split(array(" ",",",";","\n"), HTML::inputRaw("writers")));
     $writers=ARR::unique($writers);
 
@@ -40,6 +40,25 @@
 
         if ($user && $user->good()){
             if (!$product->addWriter($user)){
+                Ajax::release(Code::DB_ERROR);
+            }
+        }
+    }
+
+    // Set subscriber
+    $subscribers=(Word::split(array(" ",",",";","\n"), HTML::inputRaw("subscribers")));
+    $subscribers=ARR::unique($subscribers);
+
+    foreach ($subscribers as $u){
+        if (Word::prefix($u,"@")){
+            $u=substr($u,1);
+        }
+
+        $u=safe($u);
+        $user=User::withUsername($u);
+
+        if ($user && $user->good()){
+            if (!$product->addSubscriber($user)){
                 Ajax::release(Code::DB_ERROR);
             }
         }

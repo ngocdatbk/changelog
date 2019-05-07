@@ -2,8 +2,8 @@
 	
 	namespace changelog;
 	
-	class subscriber extends \Asset{
-		public static $db="subscriber";
+	class Subscriber extends \Asset{
+		public static $db="Subscriber";
 		public static $schema="
 			id int,
 			user_id int,

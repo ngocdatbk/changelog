@@ -1,6 +1,6 @@
 <?php
 
-	Schema::load('user\CV, changelog\Product:ext, changelog\Writer:ext, changelog\Subscriber:ext');
+	Schema::load('user\CV, changelog\Product:ext, changelog\Changelog:ext, changelog\Writer:ext, changelog\Subscriber:ext');
 	
 	FileDB::setSize(0, 60, 60);
 	FileDB::setSize(1, 160, 160);

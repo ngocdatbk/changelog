@@ -4,6 +4,6 @@
 		Action::forward("a/login");
 	}
 
-	APT::redirect("product");
+	APT::redirect("changelog");
 	
 ?>

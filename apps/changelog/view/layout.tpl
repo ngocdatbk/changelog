@@ -1,13 +1,12 @@
 <script>
-	Product.display(Client.pageData.products);
-	$("#product-search-ip").on("input", function(){
-		var q=$(this).val();
-		Changelog.filter(q);
-	});
+	// Changelog.display(Client.pageData.products);
+	// $("#product-search-ip").on("input", function(){
+	// 	var q=$(this).val();
+	// 	Changelog.filter(q);
+	// });
 </script>
 
 <div id='page-main'>
-	{% view ~header.tpl}
 
 	<div id='quota-alert'></div>
 

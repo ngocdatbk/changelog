@@ -9,7 +9,7 @@
 }
 
 .minicolors.minicolors-theme-default .minicolors-input {
-	margin: 0px;
+    margin: 0px;
 	margin-right: 3px;
 	border: solid 1px #CCC;
 	font: 14px sans-serif;
@@ -27,8 +27,8 @@
 }
 
 .minicolors-theme-default.minicolors-swatch-left .minicolors-input {
-	margin-left: -1px;
-	margin-right: auto;
+    margin-left: -1px;
+    margin-right: auto;
 }
 
 .minicolors-theme-default.minicolors-focus .minicolors-input,

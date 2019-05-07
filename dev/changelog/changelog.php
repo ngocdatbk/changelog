@@ -3,13 +3,15 @@
 	namespace changelog;
 	
 	use ARR;
+    use Valid;
 
-    class Product extends \DB{
-		public static $db="product";
+    class Changelog extends \DB{
+		public static $db="Changelog";
 		public static $schema="
 			id int,
-			name varchar(200),
-			current_version char(10),
+			product_id int,
+			title varchar(255),
+			content varchar(500),
 			
 			user_id int,
 			username varchar(32),
@@ -42,20 +44,8 @@
             return true;
         }
 
-        public function addSubscriber(&$user){
-            $writer=new Subscriber();
-            $writer->user_id = $user->id;
-            $writer->product_id = $this->id;
-
-            if (!$writer->save()){
-                return false;
-            }
-            return true;
-        }
-
         public function release(){
             $writers = $this->releaseWriter();
-            $subscribers = $this->releaseSubscriber();
 
             $num_subscribers = Subscriber::count("product_id='{$this->id}'");
 
@@ -85,23 +75,6 @@
             });
 
             return $writers;
-        }
-
-        public function releaseSubscriber(){
-            $subscribers = Subscriber::find("product_id='{$this->id}'", "user_id");
-            $subscribers = ARR::select($subscribers, function(&$p){
-                return $p->user_id;
-            });
-            $subscribers = \User::withIDs($subscribers);
-            $subscribers = ARR::select($subscribers, function(&$p){
-                return $p->release();
-            });
-
-            return $subscribers;
-        }
-
-        public static function withName($name){
-            return self::single("name='$name'");// and system_id='".Client::$system->id."'
         }
 	}
 
